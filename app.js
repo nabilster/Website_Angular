@@ -4,10 +4,28 @@ angular.module('NabilsWebsite')
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
-      // Add your own states
       .state('home', {
         url: '/home',
         templateUrl: 'template-home.html',
+      })
+      .state('about', {
+        url: '/about',
+        templateUrl: 'templates-about.html'
+      })
+      
+      .state('contact', {
+        url: '/contact',
+        templateUrl: 'templates-contacts.html'
+      })
+    
+      .state('projects', {
+        url: '/projects',
+        templateUrl: 'templates-projects.html'
+      })
+    
+      .state('skills', {
+        url: '/skills',
+        templateUrl: 'templates-skills.html',
       })
       $urlRouterProvider.otherwise('/home');
   }])
