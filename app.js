@@ -26,6 +26,7 @@ angular.module('NabilsWebsite')
       .state('skills', {
         url: '/skills',
         templateUrl: 'templates-skills.html',
+        controller: 'skillsStateCtrl'
       })
       $urlRouterProvider.otherwise('/home');
   }])
@@ -39,3 +40,11 @@ angular.module('NabilsWebsite')
       })
   }])
   
+   .controller('skillsStateCtrl', function($scope) {
+    $scope.skills = [
+        {'name': 'HTML', 'duration': 2},
+        {'name': 'jQuery', 'duration': 3},
+        {'name': 'WordPress', 'duration': 4},
+        {'name': 'Java', 'duration': 4}
+    ];
+  })
