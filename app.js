@@ -1,4 +1,4 @@
-var myApp = angular.module('NabilsWebsite',['ui.router']);
+var myApp = angular.module('NabilsWebsite',['ui.router', 'ngAnimate']);
 
 angular.module('NabilsWebsite')
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {

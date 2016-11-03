@@ -9,8 +9,49 @@
     <script src="app.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.5/angular-sanitize.min.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
      <script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
-     </head>
+    
+    <style>
+/* ---- Angular UI view style ---- */
+[ui-view].ng-enter, [ui-view].ng-leave {
+  -webkit-transition:all .15s ease-in-out;
+  -moz-transition:all .15s ease-in-out;
+  -o-transition:all .15s ease-in-out;
+  transition:all .15s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.75, 0.75, 0.75);
+  -moz-transform:scale3d(0.75, 0.75, 0.75);
+  transform:scale3d(0.75, 0.75, 0.75);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1; 
+  -webkit-transform:scale3d(0.75, 0.75, 0.75);
+  -moz-transform:scale3d(0.75, 0.75, 0.75);
+  transform:scale3d(0.75, 0.75, 0.75);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  -webkit-transform:scale3d(0.75, 0.75, 0.75);
+  -moz-transform:scale3d(0.75, 0.75, 0.75);
+  transform:scale3d(0.75, 0.75, 0.75);
+}
+    </style>
+  </head>
+
+
 
      <body ng-app="NabilsWebsite">
         <div ui-view></div>
