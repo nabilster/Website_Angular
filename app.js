@@ -6,7 +6,7 @@ angular.module('NabilsWebsite')
     $stateProvider
       .state('home', {
         url: '/home',
-        templateUrl: 'template-home.html',
+        templateUrl: 'templates-home.html',
       })
       .state('about', {
         url: '/about',
