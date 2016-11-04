@@ -80,3 +80,40 @@
     color:white;
    
 }
+
+
+/*----------ABOUT PAGE CSS-------------*/
+
+#aboutme{
+    text-align:center;
+    
+}
+#aboutme h1{
+    text-align:center;
+    font-family:SourceSansPro-Black;
+    font-size: 80px;
+    font-weight: 700;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing:0.05em;
+    margin-bottom:20px;
+    padding-top:100px;
+}
+    
+img{
+    border-radius:100%;
+    width:200px;
+}
+p{
+    margin-left:auto;
+    margin-right: auto;
+    color:white;
+    width:50%;
+    font-family:Lato-Light;
+    padding-bottom: 50px;
+}
+#aboutme table{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
