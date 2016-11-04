@@ -16,6 +16,16 @@
     overflow: auto;
 }
 
+.logo{
+    height: 60px;
+    width: 70px;
+    background-image:url(imgs/ns2.png);
+    background-size: cover;
+    float: left;
+    margin:10px 0 0 30px;
+
+}
+
 .nav{
     float:right;
     margin: 30px 30px 0 0;
