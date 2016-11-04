@@ -49,3 +49,34 @@
 .nav a:hover{
     color: red;
 }
+
+#homeh1{
+    text-align:center;
+    
+    font-family:SourceSansPro-Black;
+    font-size: 80px;
+    font-weight: 700;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing:0.05em;
+    margin-bottom:20px;
+    padding-top:300px;
+}
+
+#homeh1 span{
+    display: inline-block;
+    padding:0.2em 0.5em;
+    border: white solid 10px;
+
+}
+
+.subheading{
+    text-align:center;
+    font-family:Lato-Hairline;
+    font-weight: 700;
+    font-size:20px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color:white;
+   
+}
