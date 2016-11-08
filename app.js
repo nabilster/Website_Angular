@@ -1,50 +1,55 @@
-var myApp = angular.module('Nabilswebsite',['ui.router', 'ngAnimate']);
+var app = angular.module('Nabilswebsite',['ui.router', 'ngAnimate']);
 
 angular.module('Nabilswebsite')
-  .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+  
+    .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
+      
       .state('home', {
         url: '/home',
-        templateUrl: 'templates-home.html',
+        templateUrl: 'urls/home.html',
       })
+    
       .state('about', {
         url: '/about',
-        templateUrl: 'templates-about.html'
+        templateUrl: 'urls/about.html'
       })
       
       .state('contact', {
         url: '/contact',
-        templateUrl: 'templates-contacts.html'
+        templateUrl: 'urls/contact.html'
       })
     
       .state('projects', {
         url: '/projects',
-        templateUrl: 'templates-projects.html'
+        templateUrl: 'urls/projects.html'
       })
     
       .state('skills', {
         url: '/skills',
-        templateUrl: 'templates-skills.html',
+        templateUrl: 'urls/skills.html',
         controller: 'skillsStateCtrl'
       })
-      $urlRouterProvider.otherwise('/home');
+     
+    $urlRouterProvider.otherwise('/home');
   }])
 
-  .run(['$rootScope', '$state', function($rootScope, $state) {
-      $rootScope.$on('$stateChangeStart', function(evt, to, params) {          
-          if (to.redirectTo) {
-            evt.preventDefault();
-            $state.go(to.redirectTo, params, {location: 'replace'})
-          }
-      })
-  }])
   
    .controller('skillsStateCtrl', function($scope) {
+    
+    $scope.range = [1, 2, 3, 4, 5];
+    
     $scope.skills = [
-        {'name': 'HTML', 'duration': 2},
-        {'name': 'jQuery', 'duration': 3},
-        {'name': 'WordPress', 'duration': 4},
-        {'name': 'Java', 'duration': 4}
+        {'skill': 'HTML', 'rating': 5},
+        {'skill': 'CSS', 'rating': 5},
+        {'skill': 'JavaScript', 'rating': 4},
+        {'skill': 'Java', 'rating': 4},
+        {'skill': 'C++', 'rating': 3},
+        {'skill': 'Python', 'rating': 4},
+        {'skill': 'SQL', 'rating': 3},
+        {'skill': 'Swift', 'rating': 4},
+        {'skill': 'NASM', 'rating': 3},
+        {'skill': 'Shell Scripting', 'rating': 5},
     ];
   })

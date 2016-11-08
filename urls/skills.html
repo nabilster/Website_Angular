@@ -1,0 +1,35 @@
+<div class="header">
+    <div class="logo" ></div>
+    <div class="nav">
+        <a ui-sref="contact">Contact</a>
+        <a ui-sref="projects">Projects</a>
+        <a ui-sref="skills">Skills</a>
+        <a ui-sref="about">About</a>
+        <a ui-sref="home">Home</a>
+    </div>
+
+    <div id=title>
+    <h1 >SKILLS</h1>
+
+    <div id=skills>  
+
+        <a  href="" ng-init="orderByVariable = 'skill'" ng-click="orderByVariable = 'skill'">Sort by Skill Type</a> 
+
+        <a href="" ng-click="orderByVariable = 'rating'">Sort by Rating</a>
+    </div>
+    <br>
+    <br>
+         
+    <ul>
+        <li style="list-style-type: none;" ng-repeat="i in skills | orderBy: orderByVariable" >
+           
+            <table class='center'>
+            <tr>
+            <td>{{i.skill}}</td>
+            <td> <b ng-repeat='i in range.slice(0, i.rating)'>&#9733;</b></td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+
+</div>

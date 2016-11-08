@@ -1,41 +1,27 @@
-
 @font-face{
     font-family: "SourceSansPro-Black";
 src: url(font/SourceSansPro-Black.otf);  
 }
-
 
 @font-face{
     font-family: "SourceSansPro-Light";
 src: url(font/SourceSansPro-Light.otf);  
 }
 
-
 @font-face{
     font-family: "SourceSansPro-LightIt";
 src: url(font/SourceSansPro-LightIt.otf);  
 }
-
-
-
-
-
-
-
-
 
 @font-face{
     font-family: "Lato-Light";
 src: url(font/Lato-Light.ttf);  
 }
 
-
 @font-face{
     font-family: "Lato-Hairline";
 src: url(font/Lato-Hairline.ttf);  
 }
-
-
 
 @font-face{
     font-family: "FrontPageNeue";
